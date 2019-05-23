@@ -17,4 +17,25 @@ urlopen("http://www.python.org")
 
 #e.g, extracting an html table class
 
+#import requests library and download webpage
+
+import requests
+
+url = 'https://www.nhl.com/standings/2018/wildcard'
+response = requests.get(url)
+html = response.content
+print html
+
+#should spit out html of the webpage
+#next import BeautifulSoup html parsing lib and feed to page
+
+import requests 
+from BeautifulSoup import BeautifulSoup
+
+url = 'https://www.nhl.com/standings/2018/wildcard'
+response = requests.get(url)
+html = response.content
+
+soup = BeautifulSoup(html)
+print soup.prettify()
 
