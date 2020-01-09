@@ -1,6 +1,9 @@
 #functions are built into a toolbox/package called a standard library
 #to pull an entire kit, use the 'import' command - here we using [urllib2] package - visit sites with python
 
+#crawlers: crawls of the Alexa Top 1 Million sites, Search Engines, Common Crawl, Certificate Transparency, Max Mind, Team Cymru, Shodan and scans.io.
+
+
 import urllib2 
 
 #can also import specific tools from inside a toolkit/package by using 'from' command
