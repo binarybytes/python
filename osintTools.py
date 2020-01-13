@@ -16,7 +16,7 @@ from time import sleep
 #here is where u set the stage \(o_o)/
 #                                / \
 requests.urllib3.disable_warnings()
-clients = requests.sessions()
+client = requests.sessions()
 client.verify = False
 
 
