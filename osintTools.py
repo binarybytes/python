@@ -2,20 +2,22 @@
 #                    #
 #     u|n|i|k|s      #
 #                    #
-#                    #
 #--------------------#
+
+#!/usr/bin/python
+
+
 
 import requests
 from datetime import datetime
 from time import sleep
 
 
-#
+#here is where u set the stage \(o_o)/
+#                                / \
 requests.urllib3.disable_warnings()
 clients = requests.sessions()
 client.verify = False
-
-#!/usr/bin/python
 
 
 apik = input("entur ur apik boiii")
