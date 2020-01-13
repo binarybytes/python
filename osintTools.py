@@ -12,6 +12,9 @@ import requests
 from datetime import datetime
 from time import sleep
 
+print('-' *50)
+print("starttime: "+str(datetime.now()))
+print('-'*50)
 
 #here is where u set the stage \(o_o)/
 #                                / \
