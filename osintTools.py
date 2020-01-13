@@ -12,6 +12,7 @@ import requests
 from datetime import datetime
 from time import sleep
 
+#lame banner
 print('-' *50)
 print("starttime: "+str(datetime.now()))
 print('-'*50)
@@ -22,10 +23,10 @@ requests.urllib3.disable_warnings()
 client = requests.session()
 client.verify = False
 
-
+#first t.liner
 apik = input("entur ur apik boiii")
 
-
+#setup the api and parametrzz
 def hash_deets(apik,hash):
   url = 'https://www.virustotal.com/vtapi/v2/file/report'
   params = {'apikey' : api, 'resource' : hash, 'allinfo' : True}
@@ -33,16 +34,17 @@ def hash_deets(apik,hash):
   #call it up
   r.client.get(url, params=params)
   
+  #if its successful, then great
   if r.status_code == 200:
     resp = r.json()
     parse_results(resp)
-  
+#if u get smt back; yay  
 def parse_results(resp):
   if resp >= 1:
     scan_zults = resp['scans']
-    
+    #tell me wat i got back
     print('\nMalware Name, AV Name, Definitions Name, Last Updated\n')
-  else:
+  else: #otherwise, i guess iz gud in tha hood
     print('nun found...')
     
 while True:
