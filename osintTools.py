@@ -16,7 +16,7 @@ from time import sleep
 #here is where u set the stage \(o_o)/
 #                                / \
 requests.urllib3.disable_warnings()
-client = requests.sessions()
+client = requests.session()
 client.verify = False
 
 
@@ -30,4 +30,20 @@ def hash_deets(apik,hash):
   #call it up
   r.client.get(url, params=params)
   
+  if r.status_code == 200:
+    resp = r.json()
+    parse_results(resp)
+  
+def parse_results(resp):
+  if resp >= 1:
+    scan_zults = resp['scans']
+    
+    print('\nMalware Name, AV Name, Definitions Name, Last Updated\n')
+  else:
+    print('nun found...')
+    
+while True:
+  hash = input('entur ur hash: \n')
+  hash_deets(apik,hash)
+    
   
