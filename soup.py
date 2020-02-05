@@ -1,4 +1,7 @@
 #!/usr/bin/python
+#-------------------------#
+#   import data from net  #
+#-------------------------#
 from urllib.request import urlretrieve
 import pandas as pd
 
