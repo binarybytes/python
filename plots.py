@@ -6,7 +6,7 @@ url='https://s3.amazonaws.com/assets.datacamp.com/production/course_1606/dataset
 
 df = pd.read_csv(url,sep=';')
 
-print(df)
+print(df.head())
 
 #plot A of df
 pd.DataFrame.hist(df.ix[:, 0:1])
