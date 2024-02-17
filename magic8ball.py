@@ -1,15 +1,15 @@
 import random
 
 
-a = "Yes - definitely"
-b = "It is decidedly so"
-c = "Without a doubt"
-d = "Reply hazy, try again"
-e = "Ask again later"
-f = "Better not tell you now"
-g = "My sources say no"
-h = "Outlook not so good"
-i = "Very doubtful"
+a = "Magic 8-Ball's answer: Yes - definitely"
+b = "Magic 8-Ball's answer: It is decidedly so"
+c = "Magic 8-Ball's answer: Without a doubt"
+d = "Magic 8-Ball's answer: Reply hazy, try again"
+e = "Magic 8-Ball's answer: Ask again later"
+f = "Magic 8-Ball's answer: Better not tell you now"
+g = "Magic 8-Ball's answer: My sources say no"
+h = "Magic 8-Ball's answer: Outlook not so good"
+i = "Magic 8-Ball's answer: Very doubtful"
 
 name = "Bum "
 question = "Is this real life? "
