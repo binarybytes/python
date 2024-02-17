@@ -15,7 +15,13 @@ name = input("What is your name? \n")
 question = input("What would you like to ask my magic 8 ball? \n")
 answer = ""
 random_number = random.randint(1,9)
-print(name + " asks: " + question)
+
+if name == "":
+ print(question)
+else:
+ print(name + " asks: " + question)
+if question == "":
+	print(name + " said nothing. please play again.")
 
 if random_number == 1:
   print(a)
