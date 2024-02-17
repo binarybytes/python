@@ -11,11 +11,11 @@ g = "Magic 8-Ball's answer: My sources say no"
 h = "Magic 8-Ball's answer: Outlook not so good"
 i = "Magic 8-Ball's answer: Very doubtful"
 
-name = "Bum "
-question = "Is this real life? "
+name = input("What is your name? \n")
+question = input("What would you like to ask my magic 8 ball? \n")
 answer = ""
 random_number = random.randint(1,9)
-print(name + "asks: " + question)
+print(name + " asks: " + question)
 
 if random_number == 1:
   print(a)
@@ -37,4 +37,3 @@ elif random_number == 9:
                   print(i)
 else:
   print("Error")       
-
