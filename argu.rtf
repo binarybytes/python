@@ -1,0 +1,19 @@
+In Python, there are 3 different types of arguments we can give a function.
+
+Positional arguments: arguments that can be called by their position in the function definition.
+
+def calculate_taxi_price(miles_to_travel, rate, discount):
+  print(miles_to_travel * rate - discount )
+# 100 is miles_to_travel
+# 10 is rate
+# 5 is discount
+calculate_taxi_price(100, 10, 5)
+
+Keyword arguments: arguments that can be called by their name.
+calculate_taxi_price(rate=0.5, discount=10, miles_to_travel=100)
+
+
+Default arguments: arguments that are given default values.
+
+def calculate_taxi_price(miles_to_travel, rate, discount = 10):
+  print(miles_to_travel * rate - discount )
