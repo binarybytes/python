@@ -25,3 +25,12 @@ def double_index(my_list, index):
   my_new_list = my_new_list + my_list[index+1:]
   return my_new_list
 print(double_index([3, 8, -10, 12], 2))
+
+
+#greetings
+def add_greetings(names):
+  new = []
+  for x in names:
+    new.append('Hello, ' + x)
+  return new
+print(add_greetings(["Owen", "Max", "Sophie"]))
