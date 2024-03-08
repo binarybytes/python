@@ -12,8 +12,10 @@ hexmd5 = md5hash.hexdigest()
 hexsha256 = sha256hash.hexdigest()
 # print out the result and utilize the upper method
 # to convert all the hex characters to upper case
-print("SHA-256 Hash: " + hexsha256.upper())
-print("MD5 Hash: " + hexmd5.upper())
+print("SHA256: " + hexsha256.upper())
+print("MD5: " + hexmd5.upper())
+print("FileName: " + myString)
 print("." * 40)
 print("Processing completed.")
 print("." * 40)
+
