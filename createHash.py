@@ -1,26 +1,19 @@
 # simple program to generate the SHA-256 hash of file
 
-
 import hashlib
-# print a message to the user
-print
-print(“generate SHA256 Hash of the String ’Python
-forensics’”)
+print("." * 40)
+print("Generating Hashes for multiple files")
+print("." * 40)
+myString = "Python forensics"
+md5hash = hashlib.md5(str(myString).encode('utf-8'))
+sha256hash = hashlib.sha256(str(myString).encode('utf-8'))
 
-# define a string with the desired text
-myString = “Python forensics”
-# create an object named hash which is of type sha256
-hash = hashlib.sha256()
-# utilize the update method of the hash object to generate the SHA256 hash of myString
-
-hash.update(myString)
-# obtain the generated hex values of the SHA256 Hash
-# from the object
-# by utilizing the hexdigest method
-
-hexSHA256 = hash.hexdigest()
+hexmd5 = md5hash.hexdigest()
+hexsha256 = sha256hash.hexdigest()
 # print out the result and utilize the upper method
 # to convert all the hex characters to upper case
-print(“SHA-256 Hash: “ + hexSHA256.upper())
-print
-print(“Processing completed”)
+print("SHA-256 Hash: " + hexsha256.upper())
+print("MD5 Hash: " + hexmd5.upper())
+print("." * 40)
+print("Processing completed.")
+print("." * 40)
